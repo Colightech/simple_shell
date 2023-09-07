@@ -7,13 +7,6 @@
 
 int main(void)
 {
-	char str[MAX_STR];
-
-	while (1)
-	{
-		prompt();
-		accept_input();
-		execute_process(str);
-	}
+	execute_process();
 	return (0);
 }

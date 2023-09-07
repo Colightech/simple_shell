@@ -9,12 +9,13 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/wait.h>
+#include <stdbool.h>
 
 #define MAX_STR 150
 
 void print_func(const char *str);
 void accept_input(void);
 void prompt(void);
-void execute_process(const char *str);
+void execute_process(void);
 
 #endif
