@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * execut_process - function that executes command and processes
+ * execute_process - function that executes command and processes
  * @str; str or command to execute
  * Return: void
  */
