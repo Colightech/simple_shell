@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "shell.h"
 
 /**
  * prompt - a function that displace prompt
@@ -7,5 +7,5 @@
 
 void prompt(void)
 {
-	printf("$ ");
+	write(1, "$ ", 2);
 }

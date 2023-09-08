@@ -1,11 +1,9 @@
 #include "shell.h"
-
 /**
  * execute_process - function that executes command and processes
  * @str; str or command to execute
  * Return: void
  */
-
 void execute_process(void)
 {
 	char str[MAX_STR];
@@ -17,10 +15,10 @@ void execute_process(void)
 		prompt();
 		if (fgets(str, sizeof(str), stdin) == NULL)
 		{
-			printf("Exiting Chris_Favour's Shell.\n"); /* exit to parent with Ctr+D */
+			write(1, "Exiting Chris_Favour's Shell.\n", 31); /* exit to parent with Ctr+D */
 			break;
 		}
-		str[strlen(str) - 1] = '\0'; /* remove newline character */
+		str[strlen(str) - 1] = '\0'; /* remove trailling newline character */
 		child_process = fork(); /* create a child process to execute a command */
 		if (child_process == -1)
 		{
