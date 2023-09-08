@@ -15,7 +15,8 @@ void execute_process(void)
 		prompt();
 		if (fgets(str, sizeof(str), stdin) == NULL)
 		{
-			write(1, "Exiting Chris_Favour's Shell.\n", 31); /* exit to parent with Ctr+D */
+			/* exit to parent with Ctr+D */
+			write(1, "Exiting Chris_Favour's Shell.\n", 31);
 			break;
 		}
 		str[strlen(str) - 1] = '\0'; /* remove trailling newline character */
