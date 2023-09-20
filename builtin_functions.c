@@ -74,7 +74,8 @@ int change_dir(char **str, __attribute__((unused))int err)
  * @err: Statue of Last command Excuted
  * Return:Always 0
  */
-int dis_env(__attribute__((unused)) char **str, __attribute__((unused)) int err)
+int dis_env(__attribute__((unused)) char **str,
+		__attribute__((unused)) int err)
 {
 	size_t x;
 	int lent;

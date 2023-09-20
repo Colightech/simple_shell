@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * check_builtin- Handle Builtin Command
+ * handling_builtin - Handle Builtin Command
  * @str: Parsed Command
  * @err: statue of last Excute
  * Return: -1 Fail 0 Succes (Return :Excute Builtin)

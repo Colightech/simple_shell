@@ -67,9 +67,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 }
 /**
  * fill_an_array - Fill An Array with Constant Byte
- * @a:Void Pointer
+ * @a: Void Pointer
  * @el: Int
- * @len:Length Int
+ * @lent: Length Int
  *Return: Void Pointer
  */
 void *fill_an_array(void *a, int el, unsigned int lent)

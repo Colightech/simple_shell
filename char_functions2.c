@@ -44,8 +44,8 @@ char *_strcat(char *dest, char *src)
 }
 /**
  * _strchr - Locate Charactere In String
- * @s:String Search In
- * @c:Char To Search For
+ * @s: String Search In
+ * @b: Char To Search For
  * Return: Pointer To Char*
  */
 char *_strchr(char *s, char b)
