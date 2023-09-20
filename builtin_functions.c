@@ -10,7 +10,8 @@
 void  exit_bul(char **str, char *insert, char **argv, int b)
 {
 	int statue, x = 0;
-
+	
+	(void) statue;
 	if (str[1] == NULL)
 	{
 		free(insert);
@@ -29,7 +30,7 @@ void  exit_bul(char **str, char *insert, char **argv, int b)
 			statue = _atoi(str[1]);
 			free(insert);
 			free(str);
-			exit(statue);
+			exit(98);
 		}
 	}
 }
